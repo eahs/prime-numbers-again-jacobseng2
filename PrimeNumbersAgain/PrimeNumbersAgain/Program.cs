@@ -27,7 +27,6 @@ namespace PrimeNumbersAgain
         static int FindNthPrime(int n)
         {
             int primeCount = 1;
-<<<<<<< HEAD
             int prime = 2;
             for (int i = 3;  primeCount < n; i = i + 2)
             {
@@ -57,31 +56,6 @@ namespace PrimeNumbersAgain
             }
 
             return false;
-=======
-            for (int i = 3;  primeCount <= n; i = i + 2)
-            {
-                int divCount = 0;
-                for (int div = 2; div <= Math.Sqrt(i); div++)
-                {
-                    if (i % div == 0)
-                    {
-                        divCount++;
-                    }
-                }
-
-                if (divCount == 0)
-                {
-                    primeCount++;
-                }
-
-                if (primeCount == n)
-                {
-                    return i;
-                }
-            }
-
-            return 0;
->>>>>>> main
         }
         
 
